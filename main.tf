@@ -1,3 +1,12 @@
+resource "google_storage_bucket" "static" {
+  project       = "western-cascade-378410"
+  name          = "my-bucket-task7"
+  location      = "US"
+  storage_class = "STANDARD"
+
+ uniform_bucket_level_access = true
+}
+
 resource "google_compute_instance" "dareit-vm-ci-v2" {
   name         = "dareit-vm-tf-ci-v2"
   machine_type = "e2-medium"
@@ -21,13 +30,4 @@ resource "google_compute_instance" "dareit-vm-ci-v2" {
       // Ephemeral public IP
     }
   }
-}
-
-resource "google_storage_bucket" "static" {
-  project       = "western-cascade-378410"
-  name          = "my-bucket-task7"
-  location      = "US"
-  storage_class = "STANDARD"
-
- uniform_bucket_level_access = true
 }
