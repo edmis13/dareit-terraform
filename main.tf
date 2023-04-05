@@ -22,3 +22,12 @@ resource "google_compute_instance" "dareit-vm-ci-v2" {
     }
   }
 }
+
+    resource "google_storage_bucket" "static" {
+        project       = "western-cascade-378410"
+        name          = "my-bucket-task6"
+        location      = "US"
+        storage_class = "STANDARD"
+
+        uniform_bucket_level_access = true
+}
