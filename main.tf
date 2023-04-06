@@ -25,7 +25,7 @@ resource "google_compute_instance" "dareit-vm-ci-v2" {
 
 resource "google_storage_bucket" "static" {
   project       = "western-cascade-378410"
-  name          = "my-bucket-task6"
+  name          = "my-bucket-task7"
   location      = "US"
   storage_class = "STANDARD"
 
