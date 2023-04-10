@@ -1,3 +1,4 @@
+/*
 resource "google_compute_instance" "dareit-vm-ci-v2" {
   name         = "dareit-vm-tf-ci-v2"
   machine_type = "e2-medium"
@@ -31,3 +32,4 @@ resource "google_storage_bucket" "static" {
 
   uniform_bucket_level_access = true
 }
+*/
